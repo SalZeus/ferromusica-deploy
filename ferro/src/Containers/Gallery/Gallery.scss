@@ -1,0 +1,43 @@
+section{
+    display: flex;
+    margin-top: 150px;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        h1{
+            font-size: 3rem;
+            font-family: var(--text-font);
+            color: var(--orange);
+            align-self: center;
+        }
+        .image-container{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            .image{
+                width: 20%;
+                height: auto;
+                margin: 0px 20px 20px 20px;
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    margin: 0px 20px 20px 20px;
+                }
+            }
+        }
+    }
+}

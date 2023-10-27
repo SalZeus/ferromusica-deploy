@@ -20,6 +20,7 @@ const Layout = () => {
         rotate: 0, 
         transition:{
             duration: 3,
+            yoyo: Infinity,
         }
     },
     dragConstraints:{
@@ -39,6 +40,8 @@ const Layout = () => {
 
     }
   }
+
+  
 
   const pathVariants={
     hidden: {
