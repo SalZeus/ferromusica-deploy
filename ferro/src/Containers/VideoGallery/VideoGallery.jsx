@@ -42,10 +42,10 @@ function VideoGallery() {
                 <motion.div className="image-container"
                     animate={{ x: [0, 100, 0] }}
                 >
-                    {videos.map((title, description, videoUrl, index) => (
+                    {videos.map((video, index) => (
                         <motion.div className="image" key={index}
                             whileHover={{
-                                scale: 3,
+                                scale: 1.1,
                                 border: "10px",
                                 transition: {
                                     duration: .3,
@@ -54,18 +54,19 @@ function VideoGallery() {
                             }}
                             whileInView={{opacity: 1}}
                         >
-                            <iframe key={`video number ${index}`}
-                                width='100%' 
+                            <iframe
+                                key={`video number ${index}`}
+                                width='100%'
                                 height='100%'
                                 frameBorder="0"
-                                src={videoUrl}
-                                title={title}
+                                src={video.videoUrl} // Access videoUrl property from the video object
+                                title={video.title} // Access title property from the video object
                                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                                 allowFullScreen
                             ></iframe>
-                            <p>{description}</p>
-                        </motion.div> 
-                    ))}     
+                            <p>{video.description}</p> {/* Access description property from the video object */}
+                        </motion.div>
+                    ))}
                 </motion.div>
             </motion.div>
         </motion.section>
