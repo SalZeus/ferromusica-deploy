@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from "react";
 import './Carousel.scss'
 import { AnimatePresence, motion } from 'framer-motion'
 

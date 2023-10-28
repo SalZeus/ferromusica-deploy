@@ -43,7 +43,7 @@ function VideoGallery() {
                     animate={{ x: [0, 100, 0] }}
                 >
                     {videos.map((video, index) => (
-                        <motion.div className="image" key={index}
+                        <motion.div className="video" key={index}
                             whileHover={{
                                 scale: 1.1,
                                 border: "10px",

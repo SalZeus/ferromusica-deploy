@@ -40,13 +40,13 @@ import foto35 from "../assets/foto35.png";
 
 const GalleryItems = {
 
-  cover,
   foto1,
   foto2,
   foto3,
   foto4,
   foto5,
   foto6,
+  cover,
   foto7,
   foto8,
   foto9,

@@ -10,7 +10,7 @@ const Contact = () => {
       <div className='container'>
         <div className='invitation'>
             <h1>Nos encantaría conocerte!</h1>
-            <p>Nuestras puertas siempre están abiertas!</p>
+            <p>Dale más emoción a tus eventos!</p>
         </div>
         <motion.div className='calltoaction'
           whileHover={{
