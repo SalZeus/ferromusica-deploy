@@ -12,6 +12,11 @@ import horizontallogo from "../assets/horizontal-logo.png";
 import horizontalyellowlogo from "../assets/horizontal-yellow-logo.png";
 import sun from "../assets/sun.svg";
 import blooper from "../assets/bloopers.mp4";
+import ferroai from "../assets/ferroai-min.png";
+import helado1 from "../assets/helado1.svg";
+import helado2 from "../assets/helado2.svg";
+import helado3 from "../assets/helado3.svg";
+
 
 const images = {
   email,
@@ -27,7 +32,10 @@ const images = {
   svglogo,
   sun,
   blooper,
-
+  ferroai,
+  helado1,
+  helado2,
+  helado3,
 }
 
 export default images;

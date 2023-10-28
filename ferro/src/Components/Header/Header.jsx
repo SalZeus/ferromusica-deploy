@@ -62,7 +62,7 @@ const Layout = () => {
         title: "home"
     },
     {
-        link: "Contactanos",
+        link: "business",
         title: "Contactanos"
     },
     {

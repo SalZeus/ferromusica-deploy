@@ -1,0 +1,91 @@
+.business{
+    width: 100%;
+    height: auto;
+    margin: 250px 20px;
+    color: white;
+    display: block;
+    text-align: center;
+    .title{
+        font-size: 15rem;
+        font-family: var(--text-font);
+        color: white;
+        margin: 60px 0;
+    }
+    .hero-container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+        h1{
+            font-size: var(--title-size);
+            font-family: var(--text-font); 
+        }
+        .hero-announcement{
+            background: rgba(255, 255, 255, 0.484);
+            border-radius: 10rem;
+            padding: 3rem;
+            width: 100%;
+            height: auto;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: row;
+            justify-content:space-around;
+            h1{
+                align-self: center; /* Vertically center content */
+                display: flex; /* Allow vertical centering */
+                flex-direction: column;
+                margin: 30px 0;
+            }
+            h2{
+                align-self: center; /* Vertically center content */
+                display: flex; /* Allow vertical centering */
+                flex-direction: column;
+                margin: 30px 0;
+            }
+            a{
+                align-self: center; /* Vertically center content */
+                display: flex; /* Allow vertical centering */
+                flex-direction: column;
+                margin: 30px 0;
+                &:hover{
+                    cursor: url("../../assets/helado1.svg");
+                }
+                button{
+                    padding: 2rem;
+                    border-radius: 2rem;
+                    border: 1px solid var(--black);
+                    background: rgb(51, 121, 64);
+                    color: white;
+                    padding: 2rem;
+                    border-radius: 2rem;
+                    border: 1px solid var(--black);
+                    text-decoration: none;
+                    font-size: larger;
+                    font-family: var(--text-font);
+                    list-style: none;
+                    text-decoration: none;
+                    text-decoration-line: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        .hero-image{
+            border-radius: 4rem;
+            img{
+                border-radius:45%;
+            }
+        }
+    }
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.484);
+    justify-content: space-between;
+    margin: 0;
+}

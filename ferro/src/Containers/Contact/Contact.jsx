@@ -15,7 +15,7 @@ const Contact = () => {
         <motion.div className='calltoaction'
           whileHover={{
             scale: 1.3,
-            rotate: [-20, 20, 0]
+            rotate: [-20, 20, -20, 0]
           }}
         >
           <h1>Envíanos un mensaje!</h1>
