@@ -32,7 +32,7 @@ function VideoGallery() {
     return(
 
         <motion.section className="gallery" id="galeria"
-        animate={{ x: [0, 100, 0] }}
+        animate={{ x: [-3000, 1000, -200, 0] }}
         
         >
             <motion.div className="container"

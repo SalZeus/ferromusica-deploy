@@ -4,6 +4,7 @@ import Home from "./Containers/Home/Home";
 import Gallery from "./Containers/Gallery/Gallery.jsx";
 import VideoGallery from "./Containers/VideoGallery/VideoGallery.jsx";
 import Business from "./Containers/Business/Business"
+import NoPage from "./Components/NoPage"
 import './App.scss'
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/videos" element={<VideoGallery />}></Route>
         <Route path="/business" element={<Business />}></Route>
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   )

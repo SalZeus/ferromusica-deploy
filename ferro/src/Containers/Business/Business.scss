@@ -10,6 +10,9 @@
         font-family: var(--text-font);
         color: white;
         margin: 60px 0;
+        @media screen and (max-width: 1135px) {
+            font-size: 8rem;
+        }
     }
     .hero-container{
         display: flex;
@@ -31,6 +34,8 @@
             align-items: center;
             flex-direction: row;
             justify-content:space-around;
+            margin: 0 30px 0 30px;
+
             h1{
                 align-self: center; /* Vertically center content */
                 display: flex; /* Allow vertical centering */
@@ -66,6 +71,8 @@
                     list-style: none;
                     text-decoration: none;
                     text-decoration-line: none;
+                    max-width: 600px;
+                    margin: 0 auto;
                     cursor: pointer;
                 }
             }

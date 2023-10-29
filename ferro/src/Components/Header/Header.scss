@@ -11,12 +11,16 @@
     position: fixed;
     top: 0;
     background: rgba(57, 41, 36, 0.2);
+    .logo-svg{
+      margin-right: 40px;
+    }
 }
 .navbar-logo{
     font-family: var(--title-font);
     margin-top: 10px;
     height: 200px;
     width: auto;
+    margin-right: 20px;
 }
 .navbar-links {
     display: flex;
@@ -24,6 +28,7 @@
     list-style: none;
     width: 100%;
     justify-content: space-evenly;
+    margin-left: 40px;
     
     li {
       color: var(--orange);
@@ -119,6 +124,7 @@
             color: var(--white);
             background-color: transparent;
             z-index: inherit;
+            margin-right: 20px;
         }
         ul{
             z-index: inherit;

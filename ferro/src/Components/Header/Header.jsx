@@ -107,7 +107,7 @@ const Layout = () => {
             </a>
         </div>
         {/* <img className="navbar-logo"src={images.svglogo} alt="logo" /> */}
-        <a href="#contactanos">
+        <a className="logo-svg" href="#contactanos">
             <motion.svg 
                 viewBox="0 0 24 24" 
                 width="150px"
@@ -168,13 +168,18 @@ const Layout = () => {
             >
                 <AiOutlineClose size={55}  onClick={()=>setToggle(false)} />
                 <ul className='menu-links'>
-                    {["home", "videos", "contactanos"].map((item) =>(
+                    {/* {["home", "", "contactanos"].map((item) =>(
                         <li className="navbar-link" key={item}>
                             <a href={`#${item}`} onClick={()=>setToggle(false)}>
                                 {item}
                             </a>
                         </li>
-                    ))}
+                    ))} */}
+                    {links.map(({title, link}) =>(
+                    <li className="navbar-link" key={`link-${title}`} onClick={()=>setToggle(false)}>   
+                        <Link to={`/${link}`} >{title}</Link>
+                    </li>
+                ))}
                 </ul>
             </motion.div>
             )}

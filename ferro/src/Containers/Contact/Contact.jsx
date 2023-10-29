@@ -6,7 +6,8 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <section className='contact' id="contactanos">
+    <motion.section className='contact' id="contactanos"
+    animate={{ x: [-3000, 1000, -200, 0] }}>
       <div className='container'>
         <div className='invitation'>
             <h1>Nos encantaría conocerte!</h1>
@@ -30,7 +31,7 @@ const Contact = () => {
           </a>
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

@@ -12,7 +12,8 @@ const Business = () => {
 
   return (
     <>
-      <motion.section className="business">
+      <motion.section animate={{ x: [-3000, 1000, -200, 0] }}
+      className="business">
         <motion.h1 className="title">Veamonos!</motion.h1>
         <motion.div className="hero-container">
           <motion.div className="hero-announcement">
@@ -25,7 +26,12 @@ const Business = () => {
                 La vida es una, y estamos a un mensaje de estar juntos!
               </motion.h2>
               <a className="mensaje" href="#contactanos">
-                <motion.button>Envianos un mensaje!</motion.button>
+                <motion.button
+                whileHover={{ scale: [1.3, 1.4, 2, 1.4, 1.6, 1.2] }}
+                initial={{scale: 1}}
+                >
+                  Envianos un mensaje!
+                </motion.button>
               </a>
             </div>
             <div className="announcement-right">
@@ -38,10 +44,12 @@ const Business = () => {
         </motion.div>
         
       </motion.section>
-      <section>
+      <motion.section
+      animate={{ x: [-3000, 1000, -200, 0] }}>
         <Piechart />
-      </section>
-      <motion.section>
+      </motion.section>
+      <motion.section
+      animate={{ x: [-3000, 1000, -200, 0] }}>
         <Contact />
       </motion.section>
     </>
