@@ -54,8 +54,12 @@ const Home = () => {
       </div>
 
     </div>
-    <Carousel />
-    <Contact />
+    <section>
+      <Carousel />
+    </section>
+    <section>
+      <Contact />
+    </section>
   </>
   )
 }
