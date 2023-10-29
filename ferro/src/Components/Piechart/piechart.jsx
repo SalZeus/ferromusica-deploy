@@ -9,7 +9,7 @@ function Piechart() {
         <Chart
           className="pie"
           type="pie"
-          series={[23, 43, 50, 54]}
+          series={[30622, 22839, 18392, 10273]}
           options={{
             plotOptions: { donut: { size: "65%" } },
             title: {
@@ -43,7 +43,7 @@ function Piechart() {
               "rgb(24, 60, 161)",
               "rgb(154, 45, 154)",
             ],
-            labels: ["Clandestino", "Mirame Otra Vez", "Hoy No", "Secreto"],
+            labels: ["Mirame Otra Vez", "Clandestino", "Hoy No", "Secreto"],
             donut: {
               size: "10%",
               labels: {
@@ -99,11 +99,11 @@ function Piechart() {
         <Chart
           className="pie"
           type="pie"
-          series={[10, 120, 54, 50]}
+          series={[4070, 12640, 4300, 2500]}
           options={{
             plotOptions: { donut: { size: "65%" } },
             title: {
-              text: "Top Rankers",
+              text: "Desde Donde",
               align: "center",
               margin: 0,
               style: {
@@ -114,7 +114,7 @@ function Piechart() {
               },
             },
             subtitle: {
-              text: "Internacionales",
+              text: "Nos Escuchan?",
               align: "center",
               margin: 120,
               style: {
@@ -131,7 +131,7 @@ function Piechart() {
               "rgb(24, 60, 161)",
               "rgb(154, 45, 154)",
             ],
-            labels: ["Clandestino", "Mirame Otra Vez", "Hoy No", "Secreto"],
+            labels: ["Costa Rica", "Colombia", "Argentina", "Chile"],
             donut: { size: "10%", labels: { show: true } },
             theme: {
               palette: "pallete8",

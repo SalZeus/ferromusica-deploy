@@ -4,7 +4,7 @@ import Home from "./Containers/Home/Home";
 import Gallery from "./Containers/Gallery/Gallery.jsx";
 import VideoGallery from "./Containers/VideoGallery/VideoGallery.jsx";
 import Business from "./Containers/Business/Business"
-import NoPage from "./Components/NoPage"
+import NoPage from "./Components/NoPage/NoPage"
 import './App.scss'
 function App() {
 
