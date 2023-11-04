@@ -1,7 +1,7 @@
 // import React from 'react'
 import "./Business.scss"
 import { motion } from 'framer-motion';
-import { images } from '../../Constants';
+import images  from '../../../public/Constants/Images.js';
 import Contact from "../Contact/Contact";
 import Piechart from "../../Components/Piechart/piechart.jsx";
 

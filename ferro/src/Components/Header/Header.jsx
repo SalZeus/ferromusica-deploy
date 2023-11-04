@@ -1,7 +1,7 @@
 // import React from 'react';
 import "./Header.scss"
 import { AiOutlineClose } from "react-icons/ai";
-import { images } from '../../Constants';
+import  images  from '../../../public/Constants/Images';
 import { motion} from "framer-motion";
 import { useState } from 'react';
 import {AiFillInstagram, AiFillYoutube, AiOutlineWhatsApp} from "react-icons/ai";

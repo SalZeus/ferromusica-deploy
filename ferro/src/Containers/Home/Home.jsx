@@ -1,5 +1,5 @@
 import "./Home.scss"
-import images from "../../Constants/Images"
+import images from "../../../public/Constants/Images"
 import { motion } from 'framer-motion'
 import Carousel from "../Carousel/Carousel"
 import Contact from "../Contact/Contact"
