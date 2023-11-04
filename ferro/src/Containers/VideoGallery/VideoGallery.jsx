@@ -32,8 +32,8 @@ function VideoGallery() {
 
     return(
 
-        <motion.section className="gallery" id="galeria"
-        animate={{ x: [-4000, 1000, -200, 0] }} style={{marginTop: "500px"}}
+        <motion.section className="video-gallery" id="galeria"
+        animate={{ x: [-4000, 1000, -200, 0] }} style={{marginTop: "400px"}}
         
         >
             <Carousel />
