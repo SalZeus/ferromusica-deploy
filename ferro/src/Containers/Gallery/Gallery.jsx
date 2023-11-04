@@ -24,6 +24,9 @@ function Gallery() {
                                 whileHover={{
                                     scale: 3,
                                     border: "10px",
+                                    // x: "calc(100vw - 50%)",
+                                    // y: "calc(100vw - 50%)",
+                                    zIndex: 99,
                                     transition: {
                                         duration: .3,
                                         ease: "easeInOut"
