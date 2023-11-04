@@ -110,8 +110,8 @@ const Layout = () => {
         <a className="logo-svg" href="#contactanos">
             <motion.svg 
                 viewBox="0 0 24 24" 
-                width="150px"
-                height="150px"
+                width="100px"
+                height="100px"
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg"
                 variants={svgVariants}
