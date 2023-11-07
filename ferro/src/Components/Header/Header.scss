@@ -45,14 +45,15 @@
         transition: all 0.3s ease-in-out;
         color: var(--white);
         width: auto;
-        padding: 5px;
-        
+        padding: 5px;        
       &:hover {
         -webkit-border-radius: 130px 130px 130px 130px;
         -moz-border-radius: 130px 130px 130px 130px;
         border-radius: 130px 130px 130px 130px;
-        border: 2px solid rgba(225,77,26,0.95);
-        color: var(--yellow);
+        border: 2px solid var(--purple);
+        color: var(--purple);
+        box-shadow: 2px 2px 10px 10px var(--purple);
+
         cursor: pointer;
       }
       div {
@@ -125,6 +126,12 @@
             background-color: transparent;
             z-index: inherit;
             margin-right: 20px;
+            &:hover {
+              color: var(--purple);
+              box-shadow: 2px 2px 10px 10px var(--purple);
+      
+              cursor: pointer;
+            }
         }
         ul{
             z-index: inherit;

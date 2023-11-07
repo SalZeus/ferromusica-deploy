@@ -14,8 +14,24 @@ const Business = () => {
     <>
       <motion.section animate={{ x: [-3000, 1000, -200, 0] }}
       className="business">
-        <motion.h1 className="title">Veamonos!</motion.h1>
-        <motion.div className="hero-container">
+        <motion.h1 className="title"
+        initial={{
+          opacity: 0,
+          y: 500,
+        }}
+        animate={{
+          opacity: [0, 1],
+          y: [-400, 0],
+          transition: { duration: .8 },
+        }}
+       
+        ><motion.a  whileHover={{
+          color: [ "#ffffff","var(--purple)"]
+        }} href="#contactanos">Veamonos!</motion.a></motion.h1>
+        <motion.div className="hero-container"
+        whileHover={{
+          scale: 1.1
+        }}>
           <motion.div className="hero-announcement">
             <div className="announcement-left">
               <motion.h1>
@@ -27,7 +43,7 @@ const Business = () => {
               </motion.h2>
               <a className="mensaje" href="#contactanos">
                 <motion.button
-                whileHover={{ scale: [1.3, 1.4, 2, 1.4, 1.6, 1.2] }}
+                whileHover={{ scale: [1.3, 1.4, 2, 1.4, 1.6, 1.2, 1], background: ["rgb(78, 0, 247)", "rgb(51, 121, 64)"], color: "#000000" }}
                 initial={{scale: 1}}
                 >
                   Envianos un mensaje!
