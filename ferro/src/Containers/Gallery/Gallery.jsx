@@ -22,9 +22,10 @@ function Gallery() {
                     {imageArray.map((image, index) => (
                             <motion.div className="image" key={index}
                                 whileHover={{
-                                    border: "10px",
-                                    transform: "translate(50%, 50%)",
                                     scale: 3,
+                                    border: "10px",
+                                    // x: "calc(50%)",
+                                    // y: "calc(50%)",
                                     zIndex: 99,
                                     transition: {
                                         duration: .3,
