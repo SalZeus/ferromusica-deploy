@@ -57,7 +57,7 @@ const Home = () => {
     <section>
       <Carousel />
     </section>
-    <section>
+    <section style={{marginTop: "60px"}}>
       <Contact />
     </section>
   </>

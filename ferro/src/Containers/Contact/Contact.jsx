@@ -10,6 +10,21 @@ const Contact = () => {
     animate={{ x: [-3000, 1000, -200, 0] }}>
       <div className='container'>
         <motion.div className='invitation'
+          initial={{
+            borderRadius: "0%", 
+            background: "#000000",
+            color: '#ffffff',
+            boxShadow: 'none',
+          }}
+          whileHover={{
+            borderRadius: "0% 100% 100% 0% / 50% 50% 50% 50% ",
+            background: "var(--purple)",
+            color: "#000000",
+            x: [40, 0, 40, 0, 40, 0],
+            zIndex: 5,
+            boxShadow:"2px 2px 40px 20px var(--purple)",
+          }}
+
         >
             <motion.h1 whileHover={{
               color: "rgb(251, 59,82)",

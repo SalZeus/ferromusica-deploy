@@ -32,7 +32,14 @@ const Business = () => {
         whileHover={{
           scale: 1.1
         }}>
-          <motion.div className="hero-announcement">
+          <motion.div className="hero-announcement"
+          initial={{
+            background: "rgba(255, 255, 255, 0.484)",
+          }}
+          whileHover={{
+            background: "#000000"
+          }}
+          >
             <div className="announcement-left">
               <motion.h1>
                 Estoy emocionado por colaborar <br /> 
@@ -44,7 +51,7 @@ const Business = () => {
               <a className="mensaje" href="#contactanos">
                 <motion.button
                 whileHover={{ scale: [1.3, 1.4, 2, 1.4, 1.6, 1.2, 1], background: ["rgb(78, 0, 247)", "rgb(51, 121, 64)"], color: "#000000" }}
-                initial={{scale: 1}}
+                initial={{scale: 1, color: "#ffffff"}}
                 >
                   Envianos un mensaje!
                 </motion.button>
