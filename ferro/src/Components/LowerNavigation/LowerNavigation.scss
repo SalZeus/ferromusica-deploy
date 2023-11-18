@@ -1,0 +1,42 @@
+@media screen and (max-width: 1500px) {
+    .bottom-menu{
+        overflow: hidden;
+        background-color: rgba(19, 76, 189, 0.585);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+            
+        .bottom-responsive-menu{
+            .icon-list{
+                width: 100%;
+                height: 100px;
+                float: left;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;       
+                .icon{
+                    float: left;
+                    display: block;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                    display: flex;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        svg{
+                            width: 60px;
+                            height: 60px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

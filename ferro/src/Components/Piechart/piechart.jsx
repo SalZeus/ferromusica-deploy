@@ -21,6 +21,7 @@ function Piechart() {
                 fontWeight: "bold",
                 color: "#E91717",
                 fontFamily: "'Kanit', sans-serif",
+                minWidth: "400px"
               },
             },
             subtitle: {
@@ -62,6 +63,7 @@ function Piechart() {
             chart: {
               foreColor: "#ffffff",
               fontFamily: "'DM Sans', sans-serif",
+              minWidth: "400px"
             },
             animations: {
               enabled: true,
@@ -122,6 +124,7 @@ function Piechart() {
                 fontWeight: "bold",
                 color: "#E91717",
                 fontFamily: "'Kanit', sans-serif",
+                minWidth: "400px"
               },
             },
             noData: { text: "Empty Data" },

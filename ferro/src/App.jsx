@@ -6,6 +6,7 @@ import VideoGallery from "./Containers/VideoGallery/VideoGallery.jsx";
 import Business from "./Containers/Business/Business"
 import NoPage from "./Components/NoPage/NoPage"
 import './App.scss'
+import LowerNavigation from "./Components/LowerNavigation/LowerNavigation.jsx";
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/business" element={<Business />}></Route>
         <Route path="*" element={<NoPage />} />
       </Routes>
+      <LowerNavigation />
     </BrowserRouter>
   )
 }

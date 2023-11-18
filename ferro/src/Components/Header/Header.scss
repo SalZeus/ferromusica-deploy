@@ -14,171 +14,110 @@
     .logo-svg{
       margin-right: 40px;
     }
+
 }
 .navbar-logo{
     font-family: var(--title-font);
     margin-top: 10px;
     height: 200px;
-    width: auto;
+    width: 200px;
+    margin-top: 10px;
     margin-right: 20px;
+
+    @media screen and (max-width: 1450px) {
+      margin: 0;
+      padding: 0;
+      width: 55px;
+      height: 55px;
+    }
 }
-.navbar-links {
-    display: flex;
-    font-family: var(--text-font);
-    list-style: none;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-left: 40px;
-    
-    li {
-      color: var(--orange);
-      font-size: 3rem;
-      margin: 0 10px;
+.navbar-links{
+  display: none;
+}
+@media screen and (min-width: 1500px) {
+  .navbar-links {
       display: flex;
-      flex-direction: column;
+      font-family: var(--text-font);
+      list-style: none;
+      width: 100%;
       justify-content: space-evenly;
+      margin-left: 40px;
+      padding: 1rem 1rem;
+      @media screen and (max-width: 1450px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 0.2rem;
+        font-size: 0.8rem;
+      }
       
-      a {
-        text-decoration: none;
-        font-weight: 600;
-        text-transform: uppercase;
-        transition: all 0.3s ease-in-out;
-        color: var(--white);
-        width: auto;
-        padding: 5px;        
-      &:hover {
-        -webkit-border-radius: 130px 130px 130px 130px;
-        -moz-border-radius: 130px 130px 130px 130px;
-        border-radius: 130px 130px 130px 130px;
-        border: 2px solid var(--purple);
-        color: var(--purple);
-        box-shadow: 2px 2px 10px 10px var(--purple);
-
-        cursor: pointer;
-      }
-      div {
-        max-width: 100%;
-        position: relative;
-        img {
-          width: 100%;
-          height: 100px;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          opacity: 0;
-          transition: opacity 0.3s ease-in-out;
-        }
-      }
-      &:hover img {
-        opacity: 1;
-      }
-    }
-  }
-  @media screen and (max-width: 1500px) {
-    display: none;
-  }
-}
-
-
-.navbar-menu{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    position: relative;
-    cursor: pointer;
-    margin: 0 20px 0 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9992;
-
-    img{
-        width: 90px;
-        height: 75px;
-        color: var(--white);
-        margin: 0 60px 0 0;
-        z-index: 9999;
-    }
-    div{
-        position: fixed;
-        z-index: 9999;
-        top: 0;
-        right: 0;
-
-        width: 50%;
-        height: 100vh;
-        
+      li {
+        color: var(--orange);
+        font-size: 3rem;
+        margin: 0 10px;
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
         flex-direction: column;
-
-        background-color: rgba(0, 0, 0, 0.847);
-        background-size: cover;
-        background-repeat: repeat;
-
-        box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
-        svg{
-            width: 100px;
-            height: 100px;
-            color: var(--white);
-            background-color: transparent;
-            z-index: inherit;
-            margin-right: 20px;
-            &:hover {
-              color: var(--purple);
-              box-shadow: 2px 2px 10px 10px var(--purple);
-      
-              cursor: pointer;
-            }
+        justify-content: space-evenly;
+        @media screen and (max-width: 1450px) {
+          margin: 0;
+          padding: 0 0.2rem;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          font-size: 1rem;
+  
         }
-        ul{
-            z-index: inherit;
-            list-style: none;
-            background-color: transparent;
+        
+        a {
+          text-decoration: none;
+          font-weight: 600;
+          text-transform: uppercase;
+          transition: all 0.3s ease-in-out;
+          color: var(--white);
+          width: auto;
+          padding: 5px;  
+          padding: 1rem 0.2rem;
+  
+          @media screen and (max-width: 1450px) {
             margin: 0;
-            padding: 0;
-            height: 100%;
+            padding: 0 0.2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+          }    
+        &:hover {
+          -webkit-border-radius: 130px 130px 130px 130px;
+          -moz-border-radius: 130px 130px 130px 130px;
+          border-radius: 130px 130px 130px 130px;
+          border: 2px solid var(--purple);
+          color: var(--purple);
+          box-shadow: 2px 2px 10px 10px var(--purple);
+  
+          cursor: pointer;
+        }
+        div {
+          max-width: 100%;
+          position: relative;
+          img {
             width: 100%;
-
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-            .navbar-link{
-                
-                display: flex;
-                justify-content: flex-start;
-                background-color: transparent;
-                background: transparent; 
-                align-items: flex-start;
-                flex-direction: column; 
-                a{
-                    margin: 20px 30px 20px 0;
-                    padding-left: 30px;
-                    text-decoration: none;
-                    background-color: transparent;
-                    color: var(--white);
-                    text-transform: uppercase;
-                    font-weight: 500;
-                    font-family: var(--text-font);
-                    font-size: 3rem;
-
-                transition: all 0.3s ease-in-out;
-                &:hover{
-                    color: var(--orange);
-                }
-              }
-            }
+            height: 100px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+          }
         }
-        @media screen and (min-width: 1500px){
-            display: none;
+        &:hover img {
+          opacity: 1;
         }
+      }
     }
-    @media screen and (min-width: 1500px){
-        display: none;
+    @media screen and (max-width: 1500px) {
+      font-size: 0.2rem;
+      margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+          justify-content: space-around;
     }
+  }
 }
 .social-media{
   display: flex;
@@ -187,10 +126,21 @@
   color: var(--red);
   margin: 0;
   padding: 0;
+  @media screen and (max-width: 1450px) {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+      justify-content: space-around;
+  }
   svg{
     width: 55px;
     height: 55px;
     margin: 0 10px;
     color: var(--red);
+    @media screen and (max-width: 1450px) {
+      width: 50px;
+      height: 50px;
+
+    }
   }
 }

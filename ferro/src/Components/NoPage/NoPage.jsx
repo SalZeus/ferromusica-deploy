@@ -13,7 +13,7 @@ const NoPage = () => {
         </div>
         <motion.h1 className="main-advise">
           Diantres Batman, <br></br>
-          aqui no hay nada :(
+          aqui no hay nada :(<br></br>
         </motion.h1>
 
         <motion.p className="direction">

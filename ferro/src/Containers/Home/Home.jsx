@@ -52,12 +52,14 @@ const Home = () => {
       <div className='hero-image'>
         <video src={images.blooper} muted autoPlay loop alt="cover" />
       </div>
-
     </div>
-    <section>
+    <section style={{marginBottom: "20px"}}>
       <Carousel />
     </section>
-    <section style={{marginTop: "60px"}}>
+    <motion.h1 className="calling" style={{marginTop: "60px", marginBottom: "0"}}>
+      Procura pasarte por nuestro whatsapp! Estaremos felices de reicbirte!
+    </motion.h1>
+    <section>
       <Contact />
     </section>
   </>
