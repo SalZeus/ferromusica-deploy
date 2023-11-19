@@ -15,11 +15,6 @@ const NoPage = () => {
           Diantres Batman, <br></br>
           aqui no hay nada :(<br></br>
         </motion.h1>
-
-        <motion.p className="direction">
-          Peeeero, intenta ir al home!
-          <br></br> ↑Justo aca arriba ↑
-        </motion.p>
       </motion.section>
     );
   };
