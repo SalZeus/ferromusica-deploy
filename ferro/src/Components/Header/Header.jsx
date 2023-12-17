@@ -4,6 +4,7 @@ import { motion} from "framer-motion";
 import {AiFillInstagram, AiFillYoutube, AiOutlineWhatsApp} from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import AnimatedHeaderIcons from "../../../public/Constants/AnimatedHeaderIcons";
 
 
 const Layout = () => {
@@ -54,27 +55,29 @@ const Layout = () => {
 
   const links = [
     {
-        link: "",
+        link: "#navbar",
         title: "home"
     },
     {
-        link: "business",
+        link: "business/#navbar",
         title: "Contactanos"
     },
     {
-        link: "videos",
+        link: "videos/#navbar",
         title: "Videos"
     },
     {
-        link: "gallery",
+        link: "gallery/#navbar",
         title: "Galeria"
     },
   ]
 
+
+
   return (
     <motion.nav className='navbar'
     initial={{y: -250}}
-    animate={{scale: 1.1, y: -1}}
+    animate={{scale: 1.1, y: -1}} id="#navbar"
     >
         <div className='link-container'>
             <ul className='navbar-links'>
